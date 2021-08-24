@@ -1,3 +1,4 @@
+// Un callback es una función que recibe como argumento, otra función.
 function sum(num1, num2){
     return num1 + num2;
 }
@@ -8,7 +9,8 @@ function calc(num1,num2, callback) {
 
 console.log(calc(6,2,sum));
 
-//
+// En está ocasión vamos a controlar que es lo que se va a retornar primero.
+// Pare eso podemos utilizar 'setTimeOut'
 
 function date(callback) {
     console.log(new Date);
